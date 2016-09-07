@@ -1,0 +1,166 @@
+body
+{
+    font-family: '等线', sans-serif;
+}
+#menu
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(100% - 18px);
+    padding: 0 9px;
+    height: 50px;
+    background: #00478e;
+    background: -webkit-linear-gradient(#001020, #00478e);
+    background: -moz-linear-gradient(#001020, #00478e);
+    background: linear-gradient(#001020, #00478e);
+    z-index: 1;
+    display: table;
+}
+.menuitem
+{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.menuitem a, #fbgrplink a
+{
+    font-size: 13.5pt;
+    color: #ffffff;
+    text-decoration: none;
+    line-height: 30px;
+}
+.dropdown
+{
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #000000;
+}
+.dropdown a
+{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+.dropdown a:hover
+{
+    background-color: #808080;
+}
+.dd-show
+{
+    display: block;
+}
+div.fbicon
+{
+    width: 32px;
+}
+a.fbicon
+{
+    line-height: 0px;
+}
+#banner, #otherparts, #general
+{
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+#banner, #general
+{
+    top: 50px;
+}
+#otherparts
+{
+    top: 250px;
+}
+#bannerimg, #content
+{
+    position: relative;
+    margin: auto;
+}
+#bannerimg
+{
+    width: 100%;
+    height: 200px;
+    background: #000000;
+    display: table;
+    overflow: hidden;
+}
+#bannertxt
+{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 25px;
+    color: #ffffff;
+}
+#fbgrpname
+{
+    font-size: 25pt;
+}
+#content
+{
+    margin-top: 15px;
+    width: 100%;
+    font-family: 'Georgia', '等线', '微软雅黑', '文泉驿正黑', serif;
+}
+#content h1, h2, p
+{
+    padding: 0 25px;
+    font-weight: normal;
+}
+#content h1
+{
+    font-size: 25pt;
+}
+#content h2
+{
+    font-size: 18pt;
+}
+#content p, li
+{
+    font-size: 13.5pt;
+}
+#content li
+{
+    padding-bottom: 5px;
+}
+#content a
+{
+    color: #0060c0;
+    text-decoration: none;
+}
+#content #title, #lastupdate
+{
+    text-align: center;
+}
+p.end
+{
+    font-family: 'Consolas', 'Droid Sans Mono', 'Liberation Mono', monospace;
+    font-size: 12pt !important;
+    margin-top: 0;
+}
+@media (max-width: 1200px)
+{
+    #menupc
+    {
+        display: none;
+    }
+}
+@media (min-width: 1200px)
+{
+    #menu
+    {
+        width: calc(90% - 18px);
+        padding: 0 calc(5% + 9px);
+    }
+    #menumobile, #menumobiledd
+    {
+        display: none;
+    }
+    #bannerimg, #content
+    {
+        width: 90%;
+    }
+}
