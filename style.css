@@ -1,6 +1,6 @@
 body
 {
-    font-family: '等线', sans-serif;
+    font-family: 'DengXian', 'Microsoft YaHei', 'SimSun', 'WenQuanYi Zen Hei', sans-serif;
 }
 #menu
 {
@@ -103,7 +103,7 @@ a.fbicon
 {
     margin-top: 15px;
     width: 100%;
-    font-family: 'Georgia', '等线', '微软雅黑', '文泉驿正黑', serif;
+    font-family: 'Georgia', 'DengXian', 'Microsoft YaHei', 'SimSun', 'WenQuanYi Zen Hei', serif;
 }
 #content h1, h2, p
 {
@@ -135,11 +135,36 @@ a.fbicon
 {
     text-align: center;
 }
+.table
+{
+    display: table;
+}
+.row
+{
+    display: table-row;
+}
+.column
+{
+    display: table-cell;
+    vertical-align: middle;
+}
 p.end
 {
     font-family: 'Consolas', 'Droid Sans Mono', 'Liberation Mono', monospace;
     font-size: 12pt !important;
     margin-top: 0;
+}
+@media (max-width: 600px)
+{
+    .column
+    {
+        display: table-row;
+    }
+    .cell
+    {
+        display: table-cell;
+        padding: 10px 25px;
+    }
 }
 @media (max-width: 1200px)
 {
