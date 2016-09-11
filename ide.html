@@ -7,9 +7,13 @@
 </head>
 <body>
 <div id="menu">
+<div class="menuitem icon"><a href="home.html" class="icon"><img src="icon.png" width="32" height="32"></a></div>
 <div class="menuitem" id="menumobile"><a onclick="showDd()" href="#">菜单 &#9660;</a></div>
-<div class="dropdown" id="menumobiledd">
-<a href="home.html">首页</a>
+<div class="menuitem" id="menutablet">
+<a href="home.html">一起学编程！Go！</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a onclick="showDd()" href="#">菜单 &#9660;</a>
+</div>
+<div class="dropdown" id="menudd">
 <a href="ide.html">IDE 列表</a>
 <a href="visualstudio.html">Visual Studio 专区</a>
 <a href="texteditors.html">文字编辑器列表</a>
@@ -18,7 +22,6 @@
 <a href="about.html">关于我们</a>
 </div>
 <div class="menuitem" id="menupc">
-<a href="home.html">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="ide.html">IDE 列表</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="visualstudio.html">Visual Studio 专区</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="texteditors.html">文字编辑器列表</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -26,14 +29,13 @@
 <a href="rpidistros.html">Raspberry Pi 发行版列表</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="about.html">关于我们</a>
 </div>
-<div class="menuitem fbicon"><a href="https://fb.com/groups/ProgrammingGo" target="_top" class="fbicon">
-<meta name="viewport" content="width=device-width, initial-scale=1"><img src="fb.png" width="32" height="32"></a></div>
+<div class="menuitem icon"><a href="https://fb.com/groups/ProgrammingGo" target="_top" class="icon"><img src="fb.png" width="32" height="32"></a></div>
 </div>
 <script src="dropdown.js"></script>
 <div id="general">
 <div id="content">
 <h1 id="title">IDE 列表</h1>
-<p id="lastupdate">最后更新：2016 年 9 月 9 日</p>
+<p id="lastupdate">最后更新：2016 年 9 月 11 日</p>
 <p id="cpp">跳转至：<a href="#cpp">C / C++</a>&nbsp;&nbsp;&nbsp;
 <a href="#csharp">C#</a>&nbsp;&nbsp;&nbsp;
 <a href="#java">Java</a>&nbsp;&nbsp;&nbsp;
@@ -43,7 +45,7 @@
 <a href="#perl">Perl</a>&nbsp;&nbsp;&nbsp;
 <a href="#clojure">Clojure</a>&nbsp;&nbsp;&nbsp;
 <a href="#rust">Rust</a></p>
-<p>这个页面是专门为完全的编程初学者所准备的，以下列举一些各编程语言的著名<a href="http://zh.wikipedia.org/zh-sg/%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83" target="_top">集成开发环境</a> (IDE)。</p>
+<p>这个页面是专门为完全的编程初学者所准备的，以下列举一些各编程语言的著名<a href="http://zh.wikipedia.org/zh-sg/%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83" target="_top">集成开发环境</a> (<abbr title="Integrated Development Environment">IDE</abbr>)。</p>
 <p>有标准又好用的 IDE，可是下面没列出吗？欢迎加入“<a href="https://fb.com/groups/ProgrammingGo" target="_top">一起学编程！Go！</a>”面簿群组，并在那里提出推荐。</p>
 <h2>C / C++</h2>
 <ul>
@@ -163,7 +165,7 @@ Python 2.7/3.2.5 JIT 解释器，用 Python 写的 Python 解释器，更加快�
 <li><a href="https://fb.com/100000224670124" target="_top">Daniel Tan</a> 提供 Leiningen 的信息</li>
 <li><a href="https://fb.com/100006602922807" target="_top">何皓承</a>提供 RustDT 和 Visual Rust 的信息</li>
 </ul>
-<p class="end">EOF</p>
+<p class="end"><abbr title="End of File">EOF</abbr></p>
 </div>
 </div>
 </body>

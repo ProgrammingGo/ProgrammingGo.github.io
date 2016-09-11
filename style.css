@@ -2,20 +2,34 @@ body
 {
     font-family: 'DengXian', 'Microsoft YaHei', 'SimSun', 'WenQuanYi Zen Hei', sans-serif;
 }
+a:hover
+{
+    border-bottom: 1px solid;
+}
+abbr:hover
+{
+    border-bottom: 1px dotted #000000;
+}
 #menu
 {
     position: fixed;
     top: 0;
     left: 0;
-    width: calc(100% - 18px);
     padding: 0 9px;
-    height: 50px;
+    width: calc(100% - 18px);
+    height: 48px;
     background: #00478e;
-    background: -webkit-linear-gradient(#001020, #00478e);
-    background: -moz-linear-gradient(#001020, #00478e);
-    background: linear-gradient(#001020, #00478e);
+    border-bottom: 2px solid #002347;
     z-index: 1;
     display: table;
+}
+#menumobile, #menutablet
+{
+    padding-left: 10px;
+}
+#menupc
+{
+    padding-left: 30px;
 }
 .menuitem
 {
@@ -36,7 +50,7 @@ body
     position: absolute;
     top: 50px;
     left: 0;
-    background-color: #404040;
+    background-color: #001020;
 }
 .dropdown a
 {
@@ -47,19 +61,27 @@ body
 }
 .dropdown a:hover
 {
-    background-color: #808080;
+    background-color: #0060c0;
 }
 .dd-show
 {
     display: block;
 }
-div.fbicon
+a.current
+{
+    border-bottom: 1px solid #ffffff;
+}
+div.icon
 {
     width: 32px;
 }
-a.fbicon
+a.icon
 {
     line-height: 0px;
+}
+a.icon:hover, #menumobile a:hover, #menutablet a:hover, .dropdown a:hover
+{
+    border: none;
 }
 #banner, #otherparts, #general
 {
@@ -103,7 +125,6 @@ a.fbicon
 {
     margin-top: 15px;
     width: 100%;
-    font-family: 'Georgia', 'DengXian', 'Microsoft YaHei', 'SimSun', 'WenQuanYi Zen Hei', serif;
 }
 #content h1, h2, p
 {
@@ -148,6 +169,12 @@ a.fbicon
     display: table-cell;
     vertical-align: middle;
 }
+.fbpp
+{
+    padding: 5px 25px;
+    width: 200px;
+    height: 200px;
+}
 p.end
 {
     font-family: 'Consolas', 'Droid Sans Mono', 'Liberation Mono', monospace;
@@ -165,6 +192,21 @@ p.end
         display: table-cell;
         padding: 10px 25px;
     }
+    #menutablet
+    {
+        display: none;
+    }
+}
+@media (min-width: 600px)
+{
+    #menumobile
+    {
+        display: none;
+    }
+    .dropdown
+    {
+        left: 220px;
+    }
 }
 @media (max-width: 1200px)
 {
@@ -180,7 +222,7 @@ p.end
         width: calc(90% - 18px);
         padding: 0 calc(5% + 9px);
     }
-    #menumobile, #menumobiledd
+    #menumobile, #menutablet, #menudd
     {
         display: none;
     }
