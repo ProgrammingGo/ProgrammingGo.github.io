@@ -197,7 +197,7 @@ p.end
         display: none;
     }
 }
-@media (min-width: 600px)
+@media (min-width: 601px)
 {
     #menumobile
     {
@@ -215,7 +215,7 @@ p.end
         display: none;
     }
 }
-@media (min-width: 1200px)
+@media (min-width: 1201px)
 {
     #menu
     {
