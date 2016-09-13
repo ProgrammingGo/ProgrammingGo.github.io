@@ -1,10 +1,14 @@
 body
 {
-    font-family: 'DengXian', 'Microsoft YaHei', 'SimSun', 'WenQuanYi Zen Hei', sans-serif;
+    font-family: 'DengXian', 'Microsoft YaHei', 'Arial', 'SimSun', 'WenQuanYi Zen Hei', sans-serif;
 }
 a:hover
 {
     border-bottom: 1px solid;
+}
+abbr
+{
+    text-decoration: none;
 }
 abbr:hover
 {
@@ -18,9 +22,9 @@ abbr:hover
     padding: 0 9px;
     width: calc(100% - 18px);
     height: 48px;
-    background: #00478e;
-    border-bottom: 2px solid #002347;
-    z-index: 1;
+    background: #5d4a39;
+    border-bottom: 2px solid #262020;
+    z-index: 2;
     display: table;
 }
 #menumobile, #menutablet
@@ -46,11 +50,11 @@ abbr:hover
 }
 .dropdown
 {
-    display: none;
     position: absolute;
     top: 50px;
     left: 0;
-    background-color: #001020;
+    background-color: #57504c;
+    display: none;
 }
 .dropdown a
 {
@@ -61,7 +65,7 @@ abbr:hover
 }
 .dropdown a:hover
 {
-    background-color: #0060c0;
+    background-color: #9a9183;
 }
 .dd-show
 {
@@ -82,6 +86,21 @@ a.icon
 a.icon:hover, #menumobile a:hover, #menutablet a:hover, .dropdown a:hover
 {
     border: none;
+}
+#overlay
+{
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    display: none;
+}
+.ovl-show
+{
+    display: block !important;
 }
 #banner, #otherparts, #general
 {
@@ -149,7 +168,7 @@ a.icon:hover, #menumobile a:hover, #menutablet a:hover, .dropdown a:hover
 }
 #content a
 {
-    color: #0060c0;
+    color: #00c000;
     text-decoration: none;
 }
 #content #title, #lastupdate
@@ -181,7 +200,7 @@ p.end
     font-size: 12pt !important;
     margin-top: 0;
 }
-@media (max-width: 600px)
+@media (max-width: 599px)
 {
     .column
     {
@@ -197,7 +216,7 @@ p.end
         display: none;
     }
 }
-@media (min-width: 601px)
+@media (min-width: 600px)
 {
     #menumobile
     {
@@ -208,14 +227,14 @@ p.end
         left: 220px;
     }
 }
-@media (max-width: 1200px)
+@media (max-width: 1199px)
 {
     #menupc
     {
         display: none;
     }
 }
-@media (min-width: 1201px)
+@media (min-width: 1200px)
 {
     #menu
     {
@@ -225,6 +244,10 @@ p.end
     #menumobile, #menutablet, #menudd
     {
         display: none;
+    }
+    #overlay
+    {
+        display: none !important;
     }
     #bannerimg, #content
     {

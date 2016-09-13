@@ -9,4 +9,13 @@ function showDd()
     {
         x.className=x.className.replace(" dd-show", "");
     }
+    var y=document.getElementById("overlay");
+    if(y.className.indexOf("ovl-show")==-1)
+    {
+        y.className+=" ovl-show";
+    }
+    else
+    {
+        y.className=y.className.replace(" ovl-show", "");
+    }
 }
