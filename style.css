@@ -62,6 +62,7 @@ abbr:hover
     text-decoration: none;
     padding: 15px;
     display: block;
+    transition: all 200ms;
 }
 .dropdown a:hover
 {
@@ -162,8 +163,13 @@ a.icon:hover, #menumobile a:hover, #menutablet a:hover, .dropdown a:hover
 {
     font-size: 13.5pt;
 }
+#content p
+{
+    line-height: 20pt;
+}
 #content li
 {
+    line-height: 17pt;
     padding-bottom: 5px;
 }
 #content a
